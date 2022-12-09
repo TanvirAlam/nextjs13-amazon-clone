@@ -13,5 +13,8 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    domains: ["logos-world.net", "fakestoreapi.com"]
+  }
 };
 export default config;
