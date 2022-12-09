@@ -1,4 +1,4 @@
-# Create T3 App
+# Amazon 2.0 clone
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
@@ -13,31 +13,9 @@ If you are not familiar with the different technologies used in this project, pl
 - [Prisma](https://prisma.io)
 - [Tailwind CSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io)
+- Webhooks
+- Stripe Checkout
+- Firestore
+- NextAuth
 
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
-
-## Initial setup:
-
-- `npx create-t3-app@latest`
-- npm install:
-- `jest`
-- `babel-jest`
-- `@testing-library/react`
-- `@testing-library/jest-dom`
-- `identity-obj-proxy`
-- `react-test-renderer`
-- `jest-environment-jsdom`
-- `--save-dev`
-
-- `.eslintignore`
+## Animation: ????
