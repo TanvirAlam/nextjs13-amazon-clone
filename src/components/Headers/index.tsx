@@ -1,7 +1,7 @@
 import SearchInput from "./SearchInput";
-import { FiMenu } from "react-icons/fi";
 import Logo from "./Logo";
 import Menu from "./Menu";
+import ButtomMenu from "./ButtomMenu";
 
 export default function Header() {
   return (
@@ -11,7 +11,7 @@ export default function Header() {
         <SearchInput />
         <Menu />
       </div>
-      <div></div>
+      <ButtomMenu />
     </header>
   );
 }
