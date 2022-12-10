@@ -23,29 +23,39 @@ export default function ProductCard({
   const [hasPrime] = useState(Math.random() < 0.5);
 
   return (
-    <div>
-      <p>{category}</p>
-      <Image src={image} alt={title} width={200} height={200} />
-      <h4>{title}</h4>
+    <div className="relative z-30 m-5 flex flex-col rounded-md bg-white p-10">
+      <p className="absolute top-2 right-2 text-xs italic text-gray-400">
+        {category}
+      </p>
+      <div className="flex items-center justify-center">
+        <Image
+          src={image}
+          alt={title}
+          width={200}
+          height={200}
+          objectFit="contain"
+        />
+      </div>
+      <h4 className="my-3">{title}</h4>
       <div className="flex">
         {Array(rating)
           .fill()
           .map((_, i) => (
-            <AiFillStar key={i} className="h-5" />
+            <AiFillStar key={i} className="h-5 text-yellow-500" />
           ))}
       </div>
 
-      <p>{description}</p>
-      <div>
+      <p className="my-2 text-xs line-clamp-2">{description}</p>
+      <div className="mb-5">
         <Currency quantity={price} currency="DKK" />
       </div>
       {hasPrime && (
-        <div>
-          <img src="https://links.papareact.com/fdw" alt="" />
-          <p>FREE Next-day Delivery</p>
+        <div className="-mt-5 flex items-center space-x-2">
+          <img className="w-12" src="https://links.papareact.com/fdw" alt="" />
+          <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
         </div>
       )}
-      <button>Add to Basket</button>
+      <button className="button mt-auto">Add to Basket</button>
     </div>
   );
 }
