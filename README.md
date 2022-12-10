@@ -18,4 +18,16 @@ If you are not familiar with the different technologies used in this project, pl
 - Firestore
 - NextAuth
 
-## Animation: ????
+## Data:
+
+- Fake store api: https://fakestoreapi.com/products
+
+## Animation:
+
+### Desktop
+
+![images/Peek_2022-12-10_03-28.gif](images/Peek_2022-12-10_03-28.gif)
+
+### Mobile
+
+![images/Peek_2022-12-10_03-28.gif](images/Peek_2022-12-10_03-30.gif)
