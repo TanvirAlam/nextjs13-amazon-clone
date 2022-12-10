@@ -1,9 +1,10 @@
-import { type NextPage } from "next";
 import Head from "next/head";
 import Banner from "../components/Banner";
 import Header from "../components/Headers";
+import ProductFeeds from "../components/Products";
+import type { Products } from "../types/typings";
 
-const Home: NextPage = () => {
+const Home = ({ products }: Products) => {
   return (
     <>
       <Head>
@@ -15,10 +16,22 @@ const Home: NextPage = () => {
       <main className="mx-auto max-w-screen-2xl bg-gray-100">
         <Banner />
 
-        {/* Product */}
+        <ProductFeeds products={products} />
       </main>
     </>
   );
 };
 
 export default Home;
+
+export async function getServerSideProps(ctx: any) {
+  const products = await fetch("https://fakestoreapi.com/products").then(
+    (res) => res.json()
+  );
+
+  return {
+    props: {
+      products,
+    },
+  };
+}
