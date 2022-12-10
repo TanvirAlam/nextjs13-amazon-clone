@@ -39,7 +39,7 @@ export default function ProductCard({
       <h4 className="my-3">{title}</h4>
       <div className="flex">
         {Array(rating)
-          .fill()
+          .fill(null)
           .map((_, i) => (
             <AiFillStar key={i} className="h-5 text-yellow-500" />
           ))}
