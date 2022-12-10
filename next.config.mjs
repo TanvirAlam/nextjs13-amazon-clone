@@ -14,7 +14,7 @@ const config = {
     defaultLocale: "en",
   },
   images: {
-    domains: ["logos-world.net", "fakestoreapi.com"]
+    domains: ["logos-world.net", "fakestoreapi.com", "links.papareact.com"]
   }
 };
 export default config;

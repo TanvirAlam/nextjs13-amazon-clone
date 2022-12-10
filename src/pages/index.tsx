@@ -15,7 +15,6 @@ const Home = ({ products }: Products) => {
       <Header />
       <main className="mx-auto max-w-screen-2xl bg-gray-100">
         <Banner />
-
         <ProductFeeds products={products} />
       </main>
     </>

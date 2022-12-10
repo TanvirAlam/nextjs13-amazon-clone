@@ -6,10 +6,10 @@ export default function Logo() {
       <Image
         src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg"
         alt="logo"
-        width={100}
-        height={40}
-        objectFit="contain"
         className="cursor-pointer"
+        width={100}
+        height={50}
+        quality={80}
       />
     </div>
   );

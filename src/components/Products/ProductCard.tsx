@@ -28,13 +28,7 @@ export default function ProductCard({
         {category}
       </p>
       <div className="flex items-center justify-center">
-        <Image
-          src={image}
-          alt={title}
-          width={200}
-          height={200}
-          objectFit="contain"
-        />
+        <Image src={image} alt={title} width={200} height={200} />
       </div>
       <h4 className="my-3">{title}</h4>
       <div className="flex">
